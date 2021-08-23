@@ -560,6 +560,168 @@
 
 /*****************Skills section ends from here***********/
 
+/*************************pricing plans section starts from here****************/
+
+
+.card, .card-header , .card-body, .card-footer{
+    border: none;
+}
+.card{
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 20px;
+    box-shadow: 0 0 10px -5px rgba(0,0,0,0.7);
+    border-radius: 30px;
+}
+.card .card-header{
+    color: #fff;
+    background: linear-gradient(to bottom,#42df64 15px, #25c648 15px);
+    padding: 20px 10px 10px;
+    margin: 0 0 5px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    z-index: 1;
+}
+.card .card-header .card-title{
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+}
+.pricing-section .card .card-header .price{
+    background-color: #42df64;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 102px;
+    height: 110px;
+    width: 110px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2) inset;
+}
+.pricing-section .card .card-header .price::after{
+    content: '';
+    background-color:#42df64;
+    height: 85px;
+    box-shadow: 0 5px 10px -5px rgba(0,0,0,0.5);
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    bottom: 20px;
+    z-index: -1;
+   
+}
+.pricing-section .card .card-body .service-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+
+}
+.pricing-section .card .card-body .service-list li{
+    color: #333;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 0 0 2px 5px;
+    margin: 0 0 5px;
+    border-bottom: 2px solid #25c648;
+    position: relative;
+}
+.pricing-section .card .card-body .service-list .disable{
+    color: #d1d1d1;
+}
+.pricing-section .card .card-body .service-list li:last-child{
+    margin-bottom:  0;
+}
+.pricing-section .card .card-body .service-list li::before{
+    content: "\2713";
+    color: #25c648;
+    font-family: "Font Awesome 5 Free";
+    font-size: 17px;
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: -25px;;
+}
+.pricing-section .card .card-body .service-list .disable::before{
+    content: "\2715";
+    color: #d1d1d1;
+}
+
+.pricing-section .card .place-order{
+    background: linear-gradient(to top,#42df64 15px, #25c648 15px);
+    padding: 10px 10px 25px;
+    border-radius: 0 0 30px 30px;
+}
+.pricing-section .card .place-order button{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+.pricing-section .card.blue .card-header{
+    background: linear-gradient(to bottom,#01afed 15px, #0097ea 15px);
+}
+.pricing-section .card.blue .price{
+    background-color: #01afed;
+    border-color: #fff;
+}
+.pricing-section .card.blue .price::after{
+    background-color: #01afed;
+}
+.pricing-section .card.blue .service-list li{
+    border-bottom-color: #0097ea;
+}
+.pricing-section .card.blue .service-list li::before{
+    color: #0097ea;
+}
+.pricing-section .card.blue .place-order{
+    background: linear-gradient(to top,#01afed 15px, #0097ea 15px);
+}
+
+.pricing-section .card.navy .card-header{
+    background: linear-gradient(to bottom,#353e7f 15px,#060F5E 15px);
+}
+.pricing-section .card.navy .price{
+    background-color: #353e7f;
+    border-color: #fff;
+}
+.pricing-section .card.navy .price::after{
+    background-color: #353e7f;
+}
+.pricing-section .card.navy .service-list li{
+    border-bottom-color: #060F5E;
+}
+.pricing-section .card.navy .service-list li::before{
+    color: #060F5E;
+}
+.pricing-section .card.navy .place-order{
+    background: linear-gradient(to top,#353e7f 15px, #060F5E 15px);
+}
+.pricing-section .card:hover .price{
+    border-color: #ff6600;
+    transition: .4s;
+  
+}
+.pricing-section .card:hover .place-order button{
+    background-color: #ff6600;
+    transition: .4s;
+}
+
+
+@media only screen and (max-width: 990px){
+    .pricing-section .card{ margin-bottom: 30px; }
+}
+/*************************pricing plans section ends from here****************/
+
 /***********contact us section starts from here****************/
 
 .contact-me i{
